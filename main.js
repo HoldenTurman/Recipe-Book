@@ -11,7 +11,7 @@ function getRandomRecipe(list) {
 }
 
 function generateTags(tags) {
-    return tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+    return tags.map(tag => `<span class="tag">${tag}</span>`).join(", ");
 }
 
 function generateRatingStars(rating) {
@@ -35,7 +35,7 @@ function createRecipeCard(recipe) {
         <div class="recipe-card">
             <img src="${recipe.image}" alt="${recipe.name}" class="recipe-image">
             <div class="recipe-details">
-                <span class="category">${recipe.tags.join(', ')}</span>
+                <span class="category">${recipe.tags.join(", ")}</span>
                 <h2 class="recipe-title">${recipe.name}</h2>
                 ${generateRatingStars(recipe.rating)}
                 <p class="recipe-description">
