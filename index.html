@@ -22,32 +22,11 @@
         </div>
     </header>
     <form>
-        <input type="text" placeholder="Search" name="search">
-        <button type="submit"><img src="./images/search.png"/></button>
+        <input type="text" id="search-input" placeholder="Search for recipes...">
+        <button id="search-button"><img src="./images/search.png"/></button>
     </form>
     <hr>
     <main>
-        <div class="recipe-card">
-            <img src="./images/apple-crisp.jpg" alt="Apple Crisp" class="recipe-image">
-            <div class="recipe-details">
-                <span class="category">dessert</span>
-                <h2 class="recipe-title">Apple Crisp</h2>
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-                <p class="recipe-description">
-                    This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
-                </p>
-            </div>
-        </div>
     </main>
     <footer>
         <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
@@ -58,7 +37,7 @@
             <a href="#"><img src="./images/pinterest_icon.svg" alt="Pinterest"></a>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
     <script src="recipes.mjs"></script>
 </body>
 </html>
